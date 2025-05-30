@@ -72,7 +72,20 @@
             font-size: 1.1rem;
             font-weight: 300;
             opacity: 0.9;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .experience-badge {
+            display: inline-block;
+            background: rgba(102, 126, 234, 0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 15px 0;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            backdrop-filter: blur(10px);
         }
         
         .tech-icons {
@@ -197,6 +210,80 @@
             font-weight: bold;
         }
         
+        .quote-stamp {
+            background: linear-gradient(45deg, #f56565, #ed8936);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(245, 101, 101, 0.3);
+            transform: rotate(-1deg);
+            position: relative;
+        }
+        
+        .quote-stamp::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #f56565, #ed8936);
+            border-radius: 15px;
+            z-index: -1;
+            filter: blur(8px);
+            opacity: 0.7;
+        }
+        
+        .service-area {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .service-area h4 {
+            color: #2d3748;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .service-area p {
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+        
+        .availability-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .availability-item {
+            background: #f7fafc;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 3px solid #48bb78;
+        }
+        
+        .availability-item h5 {
+            color: #2d3748;
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+        }
+        
+        .availability-item p {
+            color: #4a5568;
+            font-size: 0.8rem;
+        }
+        
         .contact-section {
             background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
             color: white;
@@ -286,6 +373,7 @@
                 <h1 class="name">VIVEK MANJUNATH</h1>
                 <p class="tagline">Professional Tech Services & Solutions</p>
                 <p class="tagline" style="font-size: 1rem; margin-top: 5px;">Professionelle Tech-Services & Lösungen</p>
+                <div class="experience-badge">5+ Years Experience / 5+ Jahre Erfahrung</div>
                 <div class="tech-icons">
                     <div class="tech-icon">🖥️</div>
                     <div class="tech-icon">🌐</div>
@@ -297,6 +385,10 @@
         </div>
         
         <div class="content">
+            <div class="quote-stamp">
+                Contact us for a FREE Quote! / Kontaktieren Sie uns für ein KOSTENLOSES Angebot!
+            </div>
+            
             <h2 class="services-title">My Services / Meine Dienstleistungen</h2>
             
             <div class="services-grid">
@@ -350,6 +442,22 @@
                         <li>Mobile phone recommendations / Handy-Empfehlungen</li>
                         <li>Mobile setup & health analysis / Handy-Setup & Gesundheitsanalyse</li>
                     </ul>
+                </div>
+            </div>
+            
+            <div class="service-area">
+                <h4>Service Area / Servicebereich</h4>
+                <p>Mannheim, Heidelberg, Walldorf & Surrounding Areas / und Umgebung</p>
+            </div>
+            
+            <div class="availability-info">
+                <div class="availability-item">
+                    <h5>Same-Day Response</h5>
+                    <p>Antwort am selben Tag</p>
+                </div>
+                <div class="availability-item">
+                    <h5>Evenings & Weekends</h5>
+                    <p>Abends & am Wochenende</p>
                 </div>
             </div>
             
